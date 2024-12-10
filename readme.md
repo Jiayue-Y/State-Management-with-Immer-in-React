@@ -1,0 +1,4 @@
+Add the following to this `README.md` file:  
+  * A short report explaining your design decisions and any challenges faced.
+  * Documentation: Clear and concise documentation on how to run your application.
+  * Shopping list is initialized by useImmer hook that holds an array of items, each has properties like id, name, quantity, and a nested details object. addItem function creates a new item and add to the list by updateShoppingList via draft.push. The updateItem function accepts and id and updatedProperties and find the item by id, and uses assign to update its properties. The removeItem function works similarly but uses splice to remove the item found by id.
